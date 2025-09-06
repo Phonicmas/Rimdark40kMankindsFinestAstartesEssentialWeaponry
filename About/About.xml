@@ -5,10 +5,10 @@
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Phonicmas.RimDark.AstartesArmaments</packageId>
+	<packageId>Phonicmas.RimDark.MankindsFinest.AstartesEssentialWeaponry</packageId>
 	<description>
-		RimDark 40k - Astartes Armaments
-	</description>s
+		RimDark 40k - Mankinds Finest: Astartes Essential Weaponry
+	</description>
 	<modDependencies>
 		<li>
 			<packageId>Phonicmas.RimDark.FrameworkCore</packageId>
