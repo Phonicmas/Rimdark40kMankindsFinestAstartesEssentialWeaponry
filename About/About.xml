@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimDark 40k - Mankinds Finest: Astartes Essential Weaponry</name>
+	<author>Phonicmas, Mewn Goddess, Grim Cheese and UnfortunateДруг</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Phonicmas.RimDark.AstartesArmaments</packageId>
+	<description>
+		RimDark 40k - Astartes Armaments
+	</description>s
+	<modDependencies>
+		<li>
+			<packageId>Phonicmas.RimDark.FrameworkCore</packageId>
+			<displayName>RimDark 40k - Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3267464767</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Phonicmas.RimDark.MankindsFinest</packageId>
+			<displayName>RimDark 40k - Mankinds Finest</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3505068525</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>ceteam.combatextended</li>
+		<li>Phonicmas.RimDark.FrameworkCore</li>
+		<li>Phonicmas.RimDark.MankindsFinest</li>
+	</loadAfter>
+</ModMetaData>

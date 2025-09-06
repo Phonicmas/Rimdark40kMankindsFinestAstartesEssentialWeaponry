@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Kraken -->
+    <!--<ThingDef ParentName="BaseBullet">
+        <defName>BEWH_BolterRoundKraken</defName>
+        <label>bolt - Kraken</label>
+        <description>???</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <uiIconPath>Things/Ammo/Bolter/Kraken_Small</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectiles/BEWH_BolterRound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>BEWH_Bolt</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.98</armorPenetrationBase>
+            <stoppingPower>0.8</stoppingPower>
+            <soundExplode>GunShotA</soundExplode>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>90</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_ExpandedBolterRound</researchPrerequisite>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
+                <effectiveRange>15.9</effectiveRange>
+                <warmupTime>3</warmupTime>
+                <shotsPerBurst>5</shotsPerBurst>
+            </li>
+        </modExtensions>
+    </ThingDef>-->
+    <!-- Tempest -->
+    <!--<ThingDef ParentName="BaseBullet">
+        <defName>BEWH_BolterRoundTempest</defName>
+        <label>bolt - Tempest</label>
+        <description>???</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <uiIconPath>Things/Ammo/Bolter/Tempest_Small</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectiles/BEWH_BolterRound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>EMP</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.58</armorPenetrationBase>
+            <stoppingPower>0.8</stoppingPower>
+            <soundExplode>GunShotA</soundExplode>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>90</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_ExpandedBolterRound</researchPrerequisite>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
+            </li>
+        </modExtensions>
+    </ThingDef>-->
+
+</Defs>
