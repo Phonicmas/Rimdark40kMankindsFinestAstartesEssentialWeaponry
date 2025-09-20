@@ -2,10 +2,10 @@
 <Defs>
 
     <!-- Kraken -->
-    <!--<ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="BaseBullet">
         <defName>BEWH_BolterRoundKraken</defName>
-        <label>bolt - Kraken</label>
-        <description>???</description>
+        <label>Kraken Bolt</label>
+        <description>Uncommon, heavy-penetrator round designed for precision anti-armor work. It combines a hardened diamantine tip with a reactive core that devastates targets' internal systems, allowing single-shot neutralization of highly armored or elite foes. \n\nIts high energy output requires slower, more careful aiming while making single, deadly shots.</description>
         <thingClass>Projectile_Explosive</thingClass>
         <uiIconPath>Things/Ammo/Bolter/Kraken_Small</uiIconPath>
         <graphicData>
@@ -15,12 +15,12 @@
         </graphicData>
         <projectile>
             <damageDef>BEWH_Bolt</damageDef>
-            <damageAmountBase>20</damageAmountBase>
+            <damageAmountBase>30</damageAmountBase>
             <armorPenetrationBase>0.98</armorPenetrationBase>
             <stoppingPower>0.8</stoppingPower>
             <soundExplode>GunShotA</soundExplode>
             <screenShakeFactor>0.2</screenShakeFactor>
-            <speed>90</speed>
+            <speed>100</speed>
         </projectile>
         <costList>
             <ComponentIndustrial>1</ComponentIndustrial>
@@ -31,17 +31,18 @@
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
-                <effectiveRange>15.9</effectiveRange>
-                <warmupTime>3</warmupTime>
-                <shotsPerBurst>5</shotsPerBurst>
+                <effectiveRange>35.9</effectiveRange>
+                <warmupTime>2</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
             </li>
         </modExtensions>
-    </ThingDef>-->
+    </ThingDef>
+
     <!-- Tempest -->
-    <!--<ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="BaseBullet">
         <defName>BEWH_BolterRoundTempest</defName>
-        <label>bolt - Tempest</label>
-        <description>???</description>
+        <label>Tempest Bolt</label>
+        <description>Specialized round housing miniature plasma-shock generator that emits a focused EMP burst, disrupting targets' energy shields and electronic systems. Particularly effective against machines and mechanical foes.</description>
         <thingClass>Projectile_Explosive</thingClass>
         <uiIconPath>Things/Ammo/Bolter/Tempest_Small</uiIconPath>
         <graphicData>
@@ -56,7 +57,7 @@
             <stoppingPower>0.8</stoppingPower>
             <soundExplode>GunShotA</soundExplode>
             <screenShakeFactor>0.2</screenShakeFactor>
-            <speed>90</speed>
+            <speed>80</speed>
         </projectile>
         <costList>
             <ComponentIndustrial>1</ComponentIndustrial>
@@ -69,6 +70,6 @@
                 <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
             </li>
         </modExtensions>
-    </ThingDef>-->
+    </ThingDef>
 
 </Defs>

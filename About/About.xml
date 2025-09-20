@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>RimDark 40k - Mankinds Finest: Astartes Essential Weaponry</name>
+	<name>RimDark 40k - Mankinds Finest: Weaponry Essentials</name>
 	<author>Phonicmas, Mewn Goddess, Grim Cheese and UnfortunateДруг</author>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Phonicmas.RimDark.MankindsFinest.AstartesEssentialWeaponry</packageId>
+	<packageId>Phonicmas.RimDark.MankindsFinest.WeaponryEssentials</packageId>
 	<description>
-		RimDark 40k - Mankinds Finest: Astartes Essential Weaponry
+		RimDark 40k - Mankinds Finest: Weaponry Essentials
 	</description>
 	<modDependencies>
 		<li>
