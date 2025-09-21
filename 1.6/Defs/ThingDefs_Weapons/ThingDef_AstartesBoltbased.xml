@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- STANDARD -->
+
+  <!-- Bolt Pistol -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltPistol</defName>
+    <label>bolt pistol</label>
+    <description>The sandard short-range sidearm of the Adeptus Astartes, firing mass-reactive rounds. Compact, reliable and versatile, it is most effective in close-quarters combat, while retaining the lethality of a full-sized bolter.\n\nAvalible Loadout: Standard, Inferno</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltPistol</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>2.1</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.33</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>22</Steel>
+      <Plasteel>28</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>22.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <!-- <li>BEWH_BolterRoundMetalStorm</li> -->
+          <li>BEWH_BolterRoundInferno</li>
+          <!--<li>BEWH_BolterRoundKraken</li>
+          <li>BEWH_BolterRoundTempest</li>-->
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(-0.1, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0.1, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Bolt carbine -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltCarbine</defName>
+    <label>bolt carbine</label>
+    <description>A versatile, rapid-fire weapon built on the Mk. II Cawl-pattern chassis, primarily used for special operations. Compact yet powerful, it can chamber a wide variety of specialized ammunition, allowing its user to adapt to any battlefield scenario.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbine_Base</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!-- <uiIconScale>1</uiIconScale> -->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.3</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>  
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>0.88</warmupTime>
+        <range>32.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <li>BEWH_BolterRoundMetalStorm</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundTempest</li>
+          <!-- <li>BEWH_BolterRoundKraken</li> -->
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Bolt carbine Oculus -->
+    <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
+    <label>oculus bolt carbine</label>
+    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatability with a wide variety of ammuntion.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbine_Oculus</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <!-- <uiIconScale>1</uiIconScale> -->
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.48</AccuracyTouch>
+      <AccuracyShort>0.56</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>  
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>37.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <li>BEWH_BolterRoundMetalStorm</li>
+          <li>BEWH_BolterRoundInferno</li>
+          <li>BEWH_BolterRoundTempest</li>
+          <!-- <li>BEWH_BolterRoundKraken</li> -->
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <!-- Bolt rifle Stalker-->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltRifle_Stalker</defName>
+    <label>stalker bolt rifle</label>
+    <description>The Stalker Bolt Rifle, also known as the Stalker Bolter, is a long-range precision battle rifle of the Adeptus Astartes that uses Mk. II Cawl-pattern chassis. It is capable of chambering the uncommon Kraken bolts, giving it exceptional performance against heavily armored targets.\n\nAvalible Loadout: Standard, Kraken</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Stalker</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>  
+      <Steel>40</Steel>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>40.9</range>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_BolterRound</li>
+          <!-- <li>BEWH_BolterRoundMetalStorm</li> -->
+          <!-- <li>BEWH_BolterRoundInferno</li> -->
+          <li>BEWH_BolterRoundKraken</li>
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+<!-- HEAVY -->
+
+  <!-- Heavy Bolt Pistol -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltPistol_Heavy</defName>
+    <label>heavy bolt pistol</label>
+    <description>A powerful, short-range sidearm of the Adeptus Astartes, firing heavy mass-reactive bolts. While compact, it delivers far greater damage than its smaller counterpart, making it highly effective against large, heavily built enemies.\n\nLoadout: Heavy bolts</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_HeavyBoltPistol</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.52</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.33</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>29</Steel>
+      <Plasteel>36</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_HeavyBolterRound</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(-0.1, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0.1, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Heavy Bolt Rifle -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltRifle_Heavy</defName>
+    <label>heavy bolt rifle</label>
+    <description>A long-range support weapon often used by heavy intercessors of the Adeptus Astartes. Designed for sustained fire and stopping power, it fires large-caliber, mass-reactive bolts. Slower to handle and fire than standard bolters, the Heavy Bolt Rifle excels in suppressing enemy formations and tearing through fortified positions.\n\nLoadout: Heavy bolts</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Heavy</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>0.75</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases> 
+      <WorkToMake>47000</WorkToMake>
+      <Mass>5.3</Mass>
+      <AccuracyTouch>0.36</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>48</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_BolterRound</defaultProjectile>
+        <warmupTime>2.6</warmupTime>
+        <range>35.9</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0.1, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Sniper Bolt Rifle -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesBoltRifle_Sniper</defName>
+    <label>sniper bolt rifle</label>
+    <description>A long-range precision weapon of the Adeptus Astartes, firing large-caliber heavy bolts that deliver devastating impact. It allows skilled marksmen to eliminate elite and high-value targets from great distances. Its slower rate of fire is offset by extreme operational range and unmatched lethality provided by its heavy loadout.\n\nAvalible Loadout: Heavy bolts</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Sniper</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <uiIconScale>0.6</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases> 
+      <WorkToMake>47000</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.63</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.93</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>48</Steel>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_HeavyBolterRound</defaultProjectile>
+        <warmupTime>3.3</warmupTime>
+        <range>50.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.1)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>
