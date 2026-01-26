@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>RimDark 40k - Mankinds Finest: Weaponry Essentials</name>
-	<author>Phonicmas, Mewn Goddess, Grim Cheese and UnfortunateДруг</author>
+	<name>RimDark 40k - Mankinds Finest: Armory</name>
+	<author>Phonicmas, Team RimDark</author>
+	<modVersion>0.9.0</modVersion>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Phonicmas.RimDark.MankindsFinest.WeaponryEssentials</packageId>
+	<packageId>Phonicmas.RimDark.MankindsFinest.Armory</packageId>
 	<description>
-		RimDark 40k - Mankinds Finest: Weaponry Essentials
+		RimDark 40k: Mankinds Finest - Armory: A content submod featuring various armaments.
 	</description>
 	<modDependencies>
 		<li>

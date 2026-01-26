@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Black -->
+    <Genes40k.ChapterColourDef>
+        <defName>BEWH_WeaponColourTBlack</defName>
+        <appliesTo>
+            <li>BEWH_AstartesKnife</li>
+            <li>BEWH_AstartesBoltPistol</li>
+            <li>BEWH_AstartesBoltCarbine</li>
+            <li>BEWH_AstartesBoltCarbine_Oculus</li>
+            <li>BEWH_AstartesBoltRifle_Stalker</li>
+            <li>BEWH_AstartesBoltPistol_Heavy</li>
+            <li>BEWH_AstartesBoltRifle_Heavy</li>
+            <li>BEWH_AstartesBoltRifle_Sniper</li>
+            <li>BEWH_AstartesPlasmaPistol</li>
+            <li>BEWH_AstartesPlasmaIncinerator</li>
+        </appliesTo>
+        <appliesToKind>Weapon</appliesToKind>
+        <colorAmount>3</colorAmount>
+        <label>Armory: Tactical black</label>
+        <primaryColour>(37, 37, 37)</primaryColour>
+        <secondaryColour>(81, 81, 81)</secondaryColour>
+        <tertiaryColour>(163, 163, 163)</tertiaryColour>
+    </Genes40k.ChapterColourDef>
+
+    <!-- Power-based: Imperial Default -->
+    <Genes40k.ChapterColourDef>
+        <defName>BEWH_WeaponColourImperialPower</defName>
+        <appliesTo>
+            <li>BEWH_AstartesPowerSword_Judiciar</li>
+            <li>BEWH_AstartesPowerAxe</li>
+            <li>BEWH_AstartesPowerMaul</li>
+            <!-- <li>BEWH_AstartesPowerFist</li> -->
+        </appliesTo>
+        <appliesToKind>Weapon</appliesToKind>
+        <colorAmount>3</colorAmount>
+        <label>Armory: Imperial Standard</label>
+        <primaryColour>(224,155,29)</primaryColour>
+        <secondaryColour>(105,105,105)</secondaryColour>
+        <tertiaryColour>(0, 214, 255)</tertiaryColour>
+    </Genes40k.ChapterColourDef>
+
+</Defs>

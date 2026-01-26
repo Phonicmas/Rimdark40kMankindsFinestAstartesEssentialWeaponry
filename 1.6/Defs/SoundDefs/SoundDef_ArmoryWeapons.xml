@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--============Ranged=============-->
+	<!-- Plasma-based -->
+	<SoundDef>
+		<defName>BEWH_SFX_PlasmaShot</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>BEWH_PlasmaShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>24~26</volumeRange> <!-- check -->
+				<pitchRange>0.9~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BEWH_SFX_PlasmaHit</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BEWH_PlasmaHit</clipPath>
+					</li>
+				</grains>
+				<volumeRange>26~28</volumeRange> <!-- check -->
+				<pitchRange>0.9~1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!--============Melee=============-->
+	<!-- Thunderhammer -->
+	<SoundDef>
+		<defName>BEWH_SFX_ThunderhammerHit</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BEWH_ThunderhammerHit_1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50~60</volumeRange>
+				<pitchRange>0.9~1.15</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

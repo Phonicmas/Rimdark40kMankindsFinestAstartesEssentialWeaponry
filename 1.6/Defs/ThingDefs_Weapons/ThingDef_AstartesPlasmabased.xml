@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- STANDARD -->
+
+<!-- Plasma Pistol -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesPlasmaPistol</defName>
+    <label>plasma pistol</label>
+    <description>A highly sophisticated, yet compact, sidearm that fires bolts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvalible Fire modes: Standard, Overcharged</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Plasmabased/BEWH_PlasmaPistol</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <uiIconScale>1.35</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>29250</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.42</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.47</AccuracyMedium>
+      <AccuracyLong>0.33</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>29</Steel>
+      <Plasteel>36</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_Projectile_Plasma</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>22.9</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <forcedMissRadius>0.1</forcedMissRadius> <!-- ugh -->
+        <burstShotCount>1</burstShotCount>
+        <soundCast>BEWH_SFX_PlasmaShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_Projectile_Plasma</li>
+          <li>BEWH_Projectile_PlasmaCharged</li>
+          <!-- <li>BEWH_Projectile_PlasmaCharged_Heavy</li> -->
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>1</colorMaskAmount>
+        <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(-0.1, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0.1, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Plasma Incinerator -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
+    <defName>BEWH_AstartesPlasmaIncinerator</defName>
+    <label>plasma incinerator</label>
+    <description>A massive, advanced weapon capable of firing bursts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvalible Fire modes: Standard, Overcharged</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Plasmabased/BEWH_PlasmaIncinerator</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <uiIconScale>0.73</uiIconScale>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>46500</WorkToMake>
+      <Mass>6.2</Mass>
+      <AccuracyTouch>0.27</AccuracyTouch>
+      <AccuracyShort>0.61</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>  
+      <Steel>52</Steel>
+      <Plasteel>67</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_Projectile_Plasma</defaultProjectile>
+        <warmupTime>1.88</warmupTime>
+        <range>28.5</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <forcedMissRadius>0.1</forcedMissRadius>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>BEWH_SFX_PlasmaShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+      <li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+          <li>BEWH_Projectile_Plasma</li>
+          <li>BEWH_Projectile_PlasmaCharged_Heavy</li>
+        </availableProjectiles>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>1</colorMaskAmount>
+        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <angleOffset>90</angleOffset>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </east>
+          <south>
+            <angleOffset>-20</angleOffset>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 1, -0.2)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

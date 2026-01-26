@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Plasma -->
+  <DamageDef  Name="BEWH_PlasmaBurn">
+    <defName>BEWH_PlasmaBurn</defName>
+    <label>plasma explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} incinerated by a mass of superheated plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>5</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>20</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(0, 243, 254)</explosionColorCenter>
+    <explosionColorEdge>(0, 190, 255)</explosionColorEdge>
+    <soundExplosion>BEWH_SFX_PlasmaHit</soundExplosion>
+    <expolosionPropagationSpeed>0.25</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
+    <combatLogRules>Damage_Flame</combatLogRules>
+  </DamageDef>
+
+</Defs>

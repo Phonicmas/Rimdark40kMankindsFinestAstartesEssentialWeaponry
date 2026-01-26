@@ -5,7 +5,7 @@
     <ThingDef ParentName="BaseBullet">
         <defName>BEWH_BolterRoundKraken</defName>
         <label>Kraken Bolt</label>
-        <description>Uncommon, heavy-penetrator round designed for precision anti-armor work. It combines a hardened diamantine tip with a reactive core that devastates targets' internal systems, allowing single-shot neutralization of highly armored or elite foes. \n\nIts high energy output requires slower, more careful aiming while making single, deadly shots.</description>
+        <description>Uncommon, heavy-penetrator round designed for precision anti-armor work. It combines a hardened diamantine tip with a reactive core that devastates targets' internal systems, allowing single-shot neutralization of highly armored or elite foes.\n\nIts high energy output requires slower, more careful aiming while making single, deadly shots.</description>
         <thingClass>Projectile_Explosive</thingClass>
         <uiIconPath>Things/Ammo/Bolter/Kraken_Small</uiIconPath>
         <graphicData>
@@ -68,6 +68,102 @@
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>BEWH_ExpandedBolterRound</unlockedBy>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Plasma -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_Projectile_Plasma</defName>
+        <label>plasma</label>
+        <description>Standard mode: Stable plasma bolt of superheated matter that incinerates the target on impact.</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <uiIconPath>UI/BEWH_Icon_ModeDefault</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectiles/BEWH_PlasProjectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(0.65, 0.65)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>BEWH_PlasmaBurn</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <explosionRadius>0.25</explosionRadius>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>100</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <!-- <effectiveRange>20</effectiveRange>
+                <warmupTime>3</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst> -->
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Plasma Charged -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_Projectile_PlasmaCharged</defName>
+        <label>overcharged plasma</label>
+        <description>Overcharge Mode: Safety protocols disengaged; requires time to fully charge and effective range is reduced. Releases an extremely unstable plasma bolt that explodes on impact with a violent heat energy discharge.</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <uiIconPath>UI/BEWH_Icon_ModeCharged</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectiles/PlasmaHeavy</texPath>
+            <graphicClass>Graphic_Flicker</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(1, 1)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>BEWH_PlasmaBurn</damageDef>
+            <damageAmountBase>47</damageAmountBase>
+            <explosionRadius>1</explosionRadius>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>73</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>18</effectiveRange>
+                <warmupTime>2.8</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Plasma Charged Heavy -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_Projectile_PlasmaCharged_Heavy</defName>
+        <label>overcharged plasma</label>
+        <description>Overcharge Mode: Safety protocols disengaged; requires time to fully charge and effective range is reduced. Releases an extremely unstable plasma bolt that explodes on impact with a violent heat energy discharge.</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <uiIconPath>UI/BEWH_Icon_ModeCharged</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectiles/PlasmaHeavy</texPath>
+            <graphicClass>Graphic_Flicker</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(1.1, 1.1)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>BEWH_PlasmaBurn</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+            <explosionRadius>2</explosionRadius>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>73</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>24</effectiveRange>
+                <warmupTime>5.1</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
             </li>
         </modExtensions>
     </ThingDef>
