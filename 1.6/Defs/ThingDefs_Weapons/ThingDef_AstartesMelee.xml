@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Combat knife -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesKnife</defName>
+    <label>combat knife</label>
+    <description>A standard issue Astartes combat knife, that is issued to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>8500</WorkToMake>
+      <Mass>2.1</Mass>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <costList>
+      <Plasteel>8</Plasteel>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesCombatKnife</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.4</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(213,158,76)</defaultPrimaryColor>
+        <defaultSecondaryColor>(98,98,98)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0, 0, -0.2)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Judiciar Power Sword -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesPowerSword_Judiciar</defName>
+    <label>judiciar power sword</label>
+    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.</description>
+    <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>46000</WorkToMake>
+      <Mass>14</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_JudiciarPowerSword</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.35</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>1.2</armorPenetration>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(213,158,76)</defaultPrimaryColor>
+        <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor> 
+      </li>
+    </comps>
+    <equippedAngleOffset>15</equippedAngleOffset>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.27)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.27)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0, 0, -0.27)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.27)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Chain Axe -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesChainAxe</defName>
+    <label>chainaxe</label>
+    <description>A brutal melee weapon, the Chain Axe combines the form of a large battle axe with a motorized chainsaw edge. Its spinning monomolecular teeth can tear through both flesh and armor with ease.</description>
+    <soundInteract>BEWH_SFX_ChainswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_ChainswordHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>9.8</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>8</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesChainAxe</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>25.5</power>
+        <cooldownTime>1.65</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Power Axe -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesPowerAxe</defName>
+    <label>power axe</label>
+    <description>A heavy melee weapon, the Power Axe channels a disruptive energy field to cleave through armor with ease. Although less nimble than the Power Sword, it delivers a greater impact due to its weight. This weapon is known for its brutal, unsubtle strikes and is often chosen as much for personal preference as for battlefield effectiveness.</description>
+    <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>46000</WorkToMake>
+      <Mass>9</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>34</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesPowerAxe</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.35</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.2</cooldownTime>
+        <armorPenetration>1.2</armorPenetration>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0,214,255)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0.2, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0.2, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Power Maul -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesPowerMaul</defName>
+    <label>power maul</label>
+    <description>A heavy melee weapon, the Power Maul channels a disruptive energy field to crush armor and bone with each strike. Though slower than lighter weapons, its energy-infused head stuns enemies with heavy, concussive blows.</description>
+    <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_GravitonMaulHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>11</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesPowerMaul</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.10</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>1</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>14</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
+        <defaultTertiaryColor>(0,214,255)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Thunderhammer -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesThunderhammer</defName>
+    <label>thunderhammer</label>
+    <description>A massive warhammer with an integrated energy emitter in its head. The Thunderhammer delivers devastating, concussive strikes that often stun enemies. Slow to wield, yet incredibly powerful, each blow of this weapon hits with the force and sound of thunder, hence the name.</description>
+    <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_ThunderhammerHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>47000</WorkToMake>
+      <Mass>23</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesThunderhammer</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>3</cooldownTime>
+        <armorPenetration>0.85</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>14</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,194,84)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0.2, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(0.2, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Power Fist  -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesPowerFist</defName>
+    <label>power fist</label>
+    <description>A massive, armored gauntlet that greatly augments the wielder's strength, the Power Fist generates a disruptive energy field that also allows it to smash through heavy armor plating. Though slow, it is very powerful and can maim or kill even the most colossal foes in close combat.</description>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>47000</WorkToMake>
+      <Mass>7</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesPowerFist</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.2</cooldownTime>
+        <armorPenetration>0.98</armorPenetration>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(145,145,145)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,194,84)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0.2, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(-0.3, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- Lightning Claws -->
+  <ThingDef ParentName="BEWH_AstartesMeleeBase">
+    <defName>BEWH_AstartesLightningClaws</defName>
+    <label>lightning claw</label>
+    <description>A power gauntlet with three razor-sharp adamantium blades installed on it. Each blade emits a disruptive energy field, effectively functioning like a small-scale version of the Power Sword. This allows the wielder to effortlessly tear through armor and flesh, making the Lightning Claw a deadly weapon in close combat.</description>
+    <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
+    <meleeHitSound>BEWH_SFX_GravitonMaulHit</meleeHitSound>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>7</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/BEWH_AstartesLightningClaws</texPath>
+      <shaderType>BEWH_CutoutThreeColor</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <tools>
+      <li>
+        <label>blades</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+        <armorPenetration>1.2</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>8</amount>
+          </li>
+          <li>
+            <def>Stun</def>
+            <amount>14</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <comps>
+      <li Class="Core40k.CompProperties_MultiColor">
+        <colorMaskAmount>3</colorMaskAmount>
+        <defaultPrimaryColor>(68,68,68)</defaultPrimaryColor>
+        <defaultSecondaryColor>(255,194,84)</defaultSecondaryColor>
+        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension">
+        <weaponCarryDrawOffsets>
+          <north>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </north>
+          <east>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </east>
+          <south>
+            <drawOffset>(-0.3, 0, -0.15)</drawOffset>
+          </south>
+          <west>
+            <drawOffset>(0, 0, -0.15)</drawOffset>
+          </west>
+        </weaponCarryDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

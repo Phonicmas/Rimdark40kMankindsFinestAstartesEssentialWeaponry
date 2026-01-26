@@ -3,17 +3,18 @@
 
 <!-- STANDARD -->
 
-  <!-- Bolt Pistol -->
+<!-- Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol</defName>
     <label>bolt pistol</label>
-    <description>The sandard short-range sidearm of the Adeptus Astartes, firing mass-reactive rounds. Compact, reliable and versatile, it is most effective in close-quarters combat, while retaining the lethality of a full-sized bolter.\n\nAvalible Loadout: Standard, Inferno</description>
+    <description>The standard short-range sidearm of the Adeptus Astartes, firing mass-reactive rounds. Compact, reliable and versatile, it is most effective in close-quarters combat, while retaining the lethality of a full-sized bolter.\n\nAvalible Loadout: Standard, Inferno</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltPistol</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.9</drawSize>
     </graphicData>
+    <uiIconScale>1.35</uiIconScale>
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>22500</WorkToMake>
@@ -55,8 +56,11 @@
           <li>BEWH_BolterRound</li>
           <!-- <li>BEWH_BolterRoundMetalStorm</li> -->
           <li>BEWH_BolterRoundInferno</li>
-          <!--<li>BEWH_BolterRoundKraken</li>
-          <li>BEWH_BolterRoundTempest</li>-->
+          <!-- <li>BEWH_BolterRoundKraken</li> -->
+          <!-- <li>BEWH_BolterRoundTempest</li> -->
+          <!-- <li>BEWH_Projectile_Plasma</li> -->
+          <!-- <li>BEWH_Projectile_PlasmaCharged</li> -->
+          <!-- <li>BEWH_Projectile_PlasmaCharged_Heavy</li> -->
         </availableProjectiles>
       </li>
       <li Class="CompProperties_Forbiddable"/>
@@ -98,7 +102,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Bolt carbine -->
+<!-- Bolt carbine -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine</defName>
     <label>bolt carbine</label>
@@ -150,8 +154,7 @@
           <li>BEWH_BolterRound</li>
           <li>BEWH_BolterRoundMetalStorm</li>
           <li>BEWH_BolterRoundInferno</li>
-          <li>BEWH_BolterRoundTempest</li>
-          <!-- <li>BEWH_BolterRoundKraken</li> -->
+          <li>BEWH_BolterRoundTempest</li>          
         </availableProjectiles>
       </li>
       <li Class="CompProperties_Forbiddable"/>
@@ -194,11 +197,11 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Bolt carbine Oculus -->
+<!-- Bolt carbine Oculus -->
     <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
     <label>oculus bolt carbine</label>
-    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatability with a wide variety of ammuntion.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbine_Oculus</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -290,11 +293,11 @@
     </modExtensions>
   </ThingDef>
   
-  <!-- Bolt rifle Stalker-->
+<!-- Bolt rifle Stalker-->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Stalker</defName>
     <label>stalker bolt rifle</label>
-    <description>The Stalker Bolt Rifle, also known as the Stalker Bolter, is a long-range precision battle rifle of the Adeptus Astartes that uses Mk. II Cawl-pattern chassis. It is capable of chambering the uncommon Kraken bolts, giving it exceptional performance against heavily armored targets.\n\nAvalible Loadout: Standard, Kraken</description>
+    <description>The Stalker Bolt Rifle, also known as the Stalker Bolter, is a long-range precision battle rifle of the Adeptus Astartes that uses Mk. II Cawl-pattern chassis. It is capable of chambering the Kraken bolts, giving it exceptional performance against heavily armored targets.\n\nAvalible Loadout: Standard, Kraken</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Stalker</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -388,7 +391,7 @@
 
 <!-- HEAVY -->
 
-  <!-- Heavy Bolt Pistol -->
+<!-- Heavy Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol_Heavy</defName>
     <label>heavy bolt pistol</label>
@@ -397,7 +400,7 @@
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_HeavyBoltPistol</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1</drawSize>
+      <drawSize>0.87</drawSize>
     </graphicData>
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
@@ -428,7 +431,7 @@
         <range>25.9</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
-        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCast>BEWH_SFX_BolterShotHeavy</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -476,7 +479,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Heavy Bolt Rifle -->
+<!-- Heavy Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Heavy</defName>
     <label>heavy bolt rifle</label>
@@ -504,9 +507,9 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <Steel>48</Steel>
-      <Plasteel>60</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Steel>55</Steel>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <verbs>
       <li>
@@ -517,7 +520,7 @@
         <range>35.9</range>
         <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
-        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCast>BEWH_SFX_BolterShotHeavy</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
@@ -539,7 +542,7 @@
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
-        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
         <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
@@ -566,7 +569,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Sniper Bolt Rifle -->
+<!-- Sniper Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Sniper</defName>
     <label>sniper bolt rifle</label>
@@ -586,7 +589,7 @@
       <AccuracyShort>0.63</AccuracyShort>
       <AccuracyMedium>0.86</AccuracyMedium>
       <AccuracyLong>0.93</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <skillRequirements>
@@ -603,11 +606,11 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>BEWH_HeavyBolterRound</defaultProjectile>
-        <warmupTime>3.3</warmupTime>
+        <warmupTime>1.7</warmupTime>
         <range>50.9</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
-        <soundCast>BEWH_SFX_BolterShot</soundCast>
+        <soundCast>BEWH_SFX_BolterShotHeavy</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
@@ -629,7 +632,7 @@
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
-        <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
+        <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
         <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>

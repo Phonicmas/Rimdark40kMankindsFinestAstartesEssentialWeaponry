@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/Genes40k.ChapterColourDef[@Name="BEWH_WeaponColourPresetsChainsword"]/appliesTo</xpath>
+    <value>
+        <li>BEWH_AstartesPowerFist</li>
+        <li>BEWH_AstartesLightningClaws</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/Genes40k.ChapterColourDef[@Name="BEWH_WeaponColourPresetsPowersword"]/appliesTo</xpath>
+    <value>
+        <li>BEWH_AstartesLightningClaws</li>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/Genes40k.ChapterColourDef[@Name="BEWH_WeaponColourPresets"]/appliesTo</xpath>
+    <value>
+        <li>BEWH_AstartesPlasmaPistol</li>
+        <li>BEWH_AstartesPlasmaIncinerator</li>
+        <li>BEWH_AstartesBoltCarbine_Oculus</li>
+        <li>BEWH_AstartesBoltRifle_Stalker</li>
+        <li>BEWH_AstartesBoltPistol_Heavy</li>
+        <li>BEWH_AstartesBoltRifle_Heavy</li>
+        <li>BEWH_AstartesBoltRifle_Sniper</li>
+    </value>
+</Operation>
+
+</Patch>
