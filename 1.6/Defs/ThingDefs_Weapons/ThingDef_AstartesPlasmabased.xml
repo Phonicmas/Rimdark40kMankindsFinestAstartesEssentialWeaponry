@@ -74,6 +74,7 @@
         <colorMaskAmount>1</colorMaskAmount>
         <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>
       </li>
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
     <modExtensions>
       <li Class="VEF.Things.ThingDefExtension">
@@ -165,6 +166,7 @@
         <colorMaskAmount>1</colorMaskAmount>
         <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
       </li>
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
     <modExtensions>
       <li Class="VEF.Things.ThingDefExtension">
