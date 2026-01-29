@@ -5,7 +5,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesKnife</defName>
     <label>combat knife</label>
-    <description>A standard issue Astartes combat knife, that is issued to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.</description>
+    <description>A standard issue Astartes combat knife, that is issued to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - 30% chance to deal 4x the damage to the enemy.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -76,6 +76,10 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_CriticalHit">
+        <criticalHitChance>0.3</criticalHitChance>                          <!-- Equals 30% chance -->
+        <criticalHitDamageMultiplier>5</criticalHitDamageMultiplier>        <!-- Damage done is multiplied by 5 here so damage done to pawn that was 14 would become 70 (Im not doubting anyone maths skills, just for clarity xd) -->
+      </li>
     </modExtensions>
   </ThingDef>
 
@@ -83,7 +87,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerSword_Judiciar</defName>
     <label>judiciar power sword</label>
-    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.</description>
+    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.\n\nPassive: Final Judgment - Weilder has a high chance to deal a finishing blow, decapitating the humanlike enemy.</description>
     <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
     <meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
     <recipeMaker>
@@ -156,6 +160,9 @@
             <drawOffset>(0, 0, -0.27)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_BeheadingCut">
+        <neckTargetingChance>0.8</neckTargetingChance>        <!-- Equals 80% chance -->
       </li>
     </modExtensions>
   </ThingDef>
