@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<Core40k.WeaponDecorationTypeDef>
+  <Core40k.WeaponDecorationTypeDef>
     <defName>BEWH_test</defName>
     <label>TEST</label>
-</Core40k.WeaponDecorationTypeDef>
+  </Core40k.WeaponDecorationTypeDef>
 
-<Core40k.WeaponDecorationDef>
+  <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoTest_1</defName>
     <label>test</label>
     <description>...</description>
@@ -28,7 +28,7 @@
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
         <value>
           <defaultData>
-            <offset>(0.02, 0, -0.43)</offset> <!-- X Z Y (0.17, 0, -0.39) -->
+            <offset>(0.02, 0, -0.43)</offset>            <!-- X Z Y (0.17, 0, -0.39) -->
           </defaultData>
         </value>
       </li>
@@ -44,7 +44,7 @@
     <decorationType>BEWH_test</decorationType>
   </Core40k.WeaponDecorationDef>
 
-<Core40k.WeaponDecorationDef>
+  <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoTest_2</defName>
     <label>test</label>
     <description>...</description>
@@ -66,7 +66,7 @@
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
         <value>
           <defaultData>
-            <offset>(0.0, 0, 0)</offset> <!-- X Z Y (0.17, 0, -0.39) -->
+            <offset>(0.0, 0, 0)</offset>            <!-- X Z Y (0.17, 0, -0.39) -->
           </defaultData>
         </value>
       </li>

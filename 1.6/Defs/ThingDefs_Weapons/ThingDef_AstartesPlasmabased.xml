@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- STANDARD -->
+  <!-- STANDARD -->
 
-<!-- Plasma Pistol -->
+  <!-- Plasma Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaPistol</defName>
     <label>plasma pistol</label>
@@ -43,14 +43,14 @@
         <warmupTime>0.35</warmupTime>
         <range>22.9</range>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <forcedMissRadius>0.1</forcedMissRadius> <!-- ugh -->
+        <forcedMissRadius>0.1</forcedMissRadius>        <!-- ugh -->
         <burstShotCount>1</burstShotCount>
         <soundCast>BEWH_SFX_PlasmaShot</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
@@ -58,17 +58,6 @@
           <li>BEWH_Projectile_PlasmaCharged</li>
           <!-- <li>BEWH_Projectile_PlasmaCharged_Heavy</li> -->
         </availableProjectiles>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>1</colorMaskAmount>
@@ -97,7 +86,7 @@
     </modExtensions>
   </ThingDef>
 
-<!-- Plasma Incinerator -->
+  <!-- Plasma Incinerator -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaIncinerator</defName>
     <label>plasma incinerator</label>
@@ -123,7 +112,7 @@
         <Crafting>12</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <costList>  
+    <costList>
       <Steel>52</Steel>
       <Plasteel>67</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
@@ -143,24 +132,13 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
           <li>BEWH_Projectile_Plasma</li>
           <li>BEWH_Projectile_PlasmaCharged_Heavy</li>
         </availableProjectiles>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>1</colorMaskAmount>

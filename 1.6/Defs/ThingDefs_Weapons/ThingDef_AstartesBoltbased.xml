@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- STANDARD -->
+  <!-- STANDARD -->
 
-<!-- Bolt Pistol -->
+  <!-- Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol</defName>
     <label>bolt pistol</label>
@@ -49,7 +49,7 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
@@ -63,24 +63,14 @@
           <!-- <li>BEWH_Projectile_PlasmaCharged_Heavy</li> -->
         </availableProjectiles>
       </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
         <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
         <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
-      <li Class="Core40k.CompProperties_WeaponDecoration" />              <!-- This enables the weapon to have access to decorations -->
+      <li Class="Core40k.CompProperties_WeaponDecoration" />
+      <!-- This enables the weapon to have access to decorations -->
     </comps>
     <modExtensions>
       <li Class="VEF.Things.ThingDefExtension">
@@ -103,7 +93,7 @@
     </modExtensions>
   </ThingDef>
 
-<!-- Bolt carbine -->
+  <!-- Bolt carbine -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine</defName>
     <label>bolt carbine</label>
@@ -129,7 +119,7 @@
         <Crafting>11</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <costList>  
+    <costList>
       <Steel>40</Steel>
       <Plasteel>55</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
@@ -148,26 +138,15 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
           <li>BEWH_BolterRound</li>
           <li>BEWH_BolterRoundMetalStorm</li>
           <li>BEWH_BolterRoundInferno</li>
-          <li>BEWH_BolterRoundTempest</li>          
+          <li>BEWH_BolterRoundTempest</li>
         </availableProjectiles>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
@@ -199,8 +178,8 @@
     </modExtensions>
   </ThingDef>
 
-<!-- Bolt carbine Oculus -->
-    <ThingDef ParentName="BEWH_AstartesRangedBase">
+  <!-- Bolt carbine Oculus -->
+  <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
     <label>oculus bolt carbine</label>
     <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
@@ -225,7 +204,7 @@
         <Crafting>11</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <costList>  
+    <costList>
       <Steel>40</Steel>
       <Plasteel>55</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
@@ -244,7 +223,7 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
@@ -254,17 +233,6 @@
           <li>BEWH_BolterRoundTempest</li>
           <!-- <li>BEWH_BolterRoundKraken</li> -->
         </availableProjectiles>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
@@ -295,8 +263,8 @@
       </li>
     </modExtensions>
   </ThingDef>
-  
-<!-- Bolt rifle Stalker-->
+
+  <!-- Bolt rifle Stalker-->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Stalker</defName>
     <label>stalker bolt rifle</label>
@@ -322,7 +290,7 @@
         <Crafting>11</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <costList>  
+    <costList>
       <Steel>40</Steel>
       <Plasteel>55</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
@@ -341,7 +309,7 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False">      <!-- CompProperties_AmmoChanger needs the weapon to not have CompEquipable, if it does you need to not inherit any comps and instead put them in yourself from parents-->
+    <comps>
       <li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
@@ -350,17 +318,6 @@
           <!-- <li>BEWH_BolterRoundInferno</li> -->
           <li>BEWH_BolterRoundKraken</li>
         </availableProjectiles>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
@@ -393,9 +350,9 @@
   </ThingDef>
 
 
-<!-- HEAVY -->
+  <!-- HEAVY -->
 
-<!-- Heavy Bolt Pistol -->
+  <!-- Heavy Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol_Heavy</defName>
     <label>heavy bolt pistol</label>
@@ -440,21 +397,7 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
+    <comps>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
         <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>
@@ -484,7 +427,7 @@
     </modExtensions>
   </ThingDef>
 
-<!-- Heavy Bolt Rifle -->
+  <!-- Heavy Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Heavy</defName>
     <label>heavy bolt rifle</label>
@@ -497,7 +440,7 @@
     </graphicData>
     <uiIconScale>0.75</uiIconScale>
     <soundInteract>Interact_ChargeRifle</soundInteract>
-    <statBases> 
+    <statBases>
       <WorkToMake>47000</WorkToMake>
       <Mass>5.3</Mass>
       <AccuracyTouch>0.36</AccuracyTouch>
@@ -530,21 +473,7 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
+    <comps>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
         <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
@@ -575,7 +504,7 @@
     </modExtensions>
   </ThingDef>
 
-<!-- Sniper Bolt Rifle -->
+  <!-- Sniper Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Sniper</defName>
     <label>sniper bolt rifle</label>
@@ -588,7 +517,7 @@
     </graphicData>
     <uiIconScale>0.6</uiIconScale>
     <soundInteract>Interact_ChargeRifle</soundInteract>
-    <statBases> 
+    <statBases>
       <WorkToMake>47000</WorkToMake>
       <Mass>5.1</Mass>
       <AccuracyTouch>0.15</AccuracyTouch>
@@ -621,21 +550,7 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-    <comps Inherit="False"> <!-- Heavy bolt weaponry won't use AmmoChanger -->
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
+    <comps>
       <li Class="Core40k.CompProperties_MultiColor">
         <colorMaskAmount>3</colorMaskAmount>
         <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
