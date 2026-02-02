@@ -28,16 +28,17 @@
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
         <value>
           <defaultData>
-            <offset>(0.02, 0, -0.43)</offset>            <!-- X Z Y (0.17, 0, -0.39) -->
+            <offset>(0.357, 0, -0.24)</offset>
           </defaultData>
+          <dataEast>
+            <offset>(0.355, 0, -0.243)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.355, 0, -0.243)</offset>
+          </dataWest>
         </value>
       </li>
     </weaponSpecificDrawData>
-    <drawData>
-      <defaultData>
-        <offset>(0, 0, 0)</offset>
-      </defaultData>
-    </drawData>
     <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
     <defaultColour>(222,222,222)</defaultColour>
