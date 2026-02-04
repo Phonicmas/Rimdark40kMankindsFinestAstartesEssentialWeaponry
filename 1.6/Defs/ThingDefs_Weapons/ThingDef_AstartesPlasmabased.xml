@@ -3,7 +3,7 @@
 
   <!-- STANDARD -->
 
-  <!-- Plasma Pistol -->
+<!-- Plasma Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaPistol</defName>
     <label>plasma pistol</label>
@@ -86,7 +86,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Plasma Incinerator -->
+<!-- Plasma Incinerator -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaIncinerator</defName>
     <label>plasma incinerator</label>
