@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Purity Seals -->
+  <Core40k.WeaponDecorationTypeDef>
+    <defName>BEWH_DecoCategory_Pseals</defName>
+    <label>Purity Seals</label>
+  </Core40k.WeaponDecorationTypeDef>
+  
+<!-- Purity Seal 1 -->
+  <Core40k.WeaponDecorationDef>
+    <defName>BEWH_wDeco_Pseal_1</defName>
+    <label>Purity Seal 1</label>
+    <description>...</description>
+    <iconPath>Things/Decorations/Weaponry/BEWH_wDeco_Pseal_1</iconPath>
+    <drawnTextureIconPath>Things/Decorations/Weaponry/BEWH_wDeco_Pseal_1</drawnTextureIconPath>
+    <drawSize>(0.2, 0.2)</drawSize>
+    <!-- <layerPlacement>100</layerPlacement> -->
+    <!-- <useWeaponColorAsDefault>false</useWeaponColorAsDefault> -->
+    <sortOrder>1</sortOrder>
+    <appliesTo>
+      <li>BEWH_AstartesBoltPistol</li>
+      <li>BEWH_AstartesBoltCarbine</li>
+      <li>BEWH_AstartesBoltCarbine_Oculus</li>
+      <li>BEWH_AstartesBoltRifle_Stalker</li>
+      <li>BEWH_AstartesBoltPistol_Heavy</li>
+      <li>BEWH_AstartesBoltRifle_Heavy</li>
+      <li>BEWH_AstartesBoltRifle_Sniper</li>
+      <li>BEWH_AstartesPlasmaPistol</li>
+      <li>BEWH_AstartesPlasmaIncinerator</li>
+    </appliesTo>
+      <shaderType>Cutout</shaderType>
+    <colourable>false</colourable>
+    <decorationType>BEWH_DecoCategory_Pseals</decorationType>
+    <weaponSpecificDrawData>
+      <li>
+        <key>BEWH_AstartesBoltPistol</key>
+        <value>
+          <defaultData>
+            <offset>(0.03, 0, -0.03)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.03, 0, -0.03)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltCarbine</key>
+        <value>
+          <defaultData>
+            <offset>(-0.11, 0, -0.13)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.11, 0, -0.13)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.11, 0, -0.13)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.11, 0, -0.13)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltCarbine_Oculus</key>
+        <value>
+          <defaultData>
+            <offset>(-0.11, 0, -0.143)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.11, 0, -0.143)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.11, 0, -0.143)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.11, 0, -0.143)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltRifle_Stalker</key>
+        <value>
+          <defaultData>
+            <offset>(0.32, 0, 0)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.32, 0, 0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.32, 0, 0)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.32, 0, 0)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltPistol_Heavy</key>
+        <value>
+          <defaultData>
+            <offset>(0.03, 0, -0.03)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.03, 0, -0.03)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltRifle_Heavy</key>
+        <value>
+          <defaultData>
+            <offset>(0.49, 0, 0.03)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.49, 0, 0.03)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.49, 0, 0.03)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.49, 0, 0.03)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltRifle_Sniper</key>
+        <value>
+          <defaultData>
+            <offset>(-0.192, 0, 0)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.192, 0, 0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.192, 0, 0)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.192, 0, 0)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesPlasmaPistol</key>
+        <value>
+          <defaultData>
+            <offset>(0.049, 0, -0.039)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.049, 0, -0.039)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.049, 0, -0.039)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.049, 0, -0.039)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesPlasmaIncinerator</key>
+        <value>
+          <defaultData>
+            <offset>(0.021, 0, 0)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.021, 0, 0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.021, 0, 0)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.021, 0, 0)</offset>
+          </dataNorth>
+        </value>
+      </li>
+    </weaponSpecificDrawData>
+  </Core40k.WeaponDecorationDef>
+
+<!-- Purity Seal 2 -->
+  <Core40k.WeaponDecorationDef>
+    <defName>BEWH_wDeco_Pseal_2</defName>
+    <label>Purity Seal 2</label>
+    <description>...</description>
+    <iconPath>Things/Decorations/Weaponry/BEWH_wDeco_Pseal_2</iconPath>
+    <drawnTextureIconPath>Things/Decorations/Weaponry/BEWH_wDeco_Pseal_2</drawnTextureIconPath>
+    <drawSize>(0.2, 0.2)</drawSize>
+    <sortOrder>1</sortOrder>
+    <appliesTo>
+      <li>BEWH_AstartesBoltPistol</li>
+      <li>BEWH_AstartesBoltCarbine</li>
+      <li>BEWH_AstartesBoltCarbine_Oculus</li>
+      <li>BEWH_AstartesBoltRifle_Stalker</li>
+      <li>BEWH_AstartesBoltPistol_Heavy</li>
+      <li>BEWH_AstartesBoltRifle_Heavy</li>
+      <li>BEWH_AstartesBoltRifle_Sniper</li>
+      <li>BEWH_AstartesPlasmaPistol</li>
+      <li>BEWH_AstartesPlasmaIncinerator</li>
+    </appliesTo>
+      <shaderType>Cutout</shaderType>
+    <colourable>false</colourable>
+    <decorationType>BEWH_DecoCategory_Pseals</decorationType>
+    <weaponSpecificDrawData>
+      <li>
+        <key>BEWH_AstartesBoltPistol</key>
+        <value>
+          <defaultData>
+            <offset>(0.03, 0, -0.03)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.03, 0, -0.03)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.03, 0, -0.03)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltCarbine</key>
+        <value>
+          <defaultData>
+            <offset>(0.365, 0, -0.135)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.365, 0, -0.135)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.365, 0, -0.135)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.365, 0, -0.135)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltCarbine_Oculus</key>
+        <value>
+          <defaultData>
+            <offset>(0.09, 0, 0.045)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.09, 0, 0.045)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.09, 0, 0.045)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.09, 0, 0.045)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <!-- BEWH_AstartesBoltRifle_Stalker at default -->
+      <!-- BEWH_AstartesBoltPistol_Heavy at default -->
+      <li>
+        <key>BEWH_AstartesBoltRifle_Heavy</key>
+        <value>
+          <defaultData>
+            <offset>(-0.196, 0, -0.17)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.196, 0, -0.17)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.196, 0, -0.17)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.196, 0, -0.17)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesBoltRifle_Sniper</key>
+        <value>
+          <defaultData>
+            <offset>(0.124, 0, -0.158)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.124, 0, -0.158)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.124, 0, -0.158)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.124, 0, -0.158)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesPlasmaPistol</key>
+        <value>
+          <defaultData>
+            <offset>(0.049, 0, -0.039)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(0.049, 0, -0.039)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.049, 0, -0.039)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(-0.049, 0, -0.039)</offset>
+          </dataNorth>
+        </value>
+      </li>
+      <li>
+        <key>BEWH_AstartesPlasmaIncinerator</key>
+        <value>
+          <defaultData>
+            <offset>(-0.113, 0, -0.166)</offset>
+          </defaultData>
+          <dataEast>
+            <offset>(-0.113, 0, -0.166)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.113, 0, -0.166)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0.113, 0, -0.166)</offset>
+          </dataNorth>
+        </value>
+      </li>      
+    </weaponSpecificDrawData>
+  </Core40k.WeaponDecorationDef>
+
+</Defs> 

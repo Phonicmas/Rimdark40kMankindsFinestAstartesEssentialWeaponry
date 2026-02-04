@@ -5,7 +5,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesKnife</defName>
     <label>combat knife</label>
-    <description>A standard issue Astartes combat knife, that is issued to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - 30% chance to deal 4x the damage to the enemy.</description>
+    <description>A standard issue Astartes combat knife, that is given to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - 30% chance to deal 4x the damage to the enemy.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>

@@ -3,7 +3,7 @@
 
   <!-- STANDARD -->
 
-  <!-- Bolt Pistol -->
+<!-- Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol</defName>
     <label>bolt pistol</label>
@@ -93,7 +93,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Bolt carbine -->
+<!-- Bolt carbine -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine</defName>
     <label>bolt carbine</label>
@@ -178,7 +178,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Bolt carbine Oculus -->
+<!-- Bolt carbine Oculus -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
     <label>oculus bolt carbine</label>
@@ -264,7 +264,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Bolt rifle Stalker-->
+<!-- Bolt rifle Stalker-->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Stalker</defName>
     <label>stalker bolt rifle</label>
@@ -352,7 +352,7 @@
 
   <!-- HEAVY -->
 
-  <!-- Heavy Bolt Pistol -->
+<!-- Heavy Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol_Heavy</defName>
     <label>heavy bolt pistol</label>
@@ -427,7 +427,7 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Heavy Bolt Rifle -->
+<!-- Heavy Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Heavy</defName>
     <label>heavy bolt rifle</label>
@@ -504,11 +504,11 @@
     </modExtensions>
   </ThingDef>
 
-  <!-- Sniper Bolt Rifle -->
+<!-- Sniper Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Sniper</defName>
     <label>sniper bolt rifle</label>
-    <description>A long-range precision weapon of the Adeptus Astartes, firing large-caliber heavy bolts that deliver devastating impact. It allows skilled marksmen to eliminate elite and high-value targets from great distances. Its slower rate of fire is offset by extreme operational range and unmatched lethality provided by its heavy loadout.\n\nAvalible Loadout: Heavy bolts</description>
+    <description>A long-range precision weapon of the Adeptus Astartes, firing large-caliber heavy bolts that deliver devastating impact. It allows skilled marksmen to eliminate elite and high-value targets from great distances. Its slower rate of fire is offset by extreme operational range and unmatched lethality provided by its heavy loadout.\n\nLoadout: Heavy bolts</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Sniper</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
