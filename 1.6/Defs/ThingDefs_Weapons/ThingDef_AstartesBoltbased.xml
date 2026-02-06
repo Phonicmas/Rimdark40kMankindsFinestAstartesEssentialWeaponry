@@ -3,7 +3,7 @@
 
   <!-- STANDARD -->
 
-<!-- Bolt Pistol -->
+  <!-- Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol</defName>
     <label>bolt pistol</label>
@@ -90,10 +90,16 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Bolt carbine -->
+  <!-- Bolt carbine -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine</defName>
     <label>bolt carbine</label>
@@ -175,10 +181,16 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Bolt carbine Oculus -->
+  <!-- Bolt carbine Oculus -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
     <label>oculus bolt carbine</label>
@@ -261,10 +273,16 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Bolt rifle Stalker-->
+  <!-- Bolt rifle Stalker-->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Stalker</defName>
     <label>stalker bolt rifle</label>
@@ -346,13 +364,19 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
 
   <!-- HEAVY -->
 
-<!-- Heavy Bolt Pistol -->
+  <!-- Heavy Bolt Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol_Heavy</defName>
     <label>heavy bolt pistol</label>
@@ -424,10 +448,16 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Heavy Bolt Rifle -->
+  <!-- Heavy Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Heavy</defName>
     <label>heavy bolt rifle</label>
@@ -501,10 +531,16 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Sniper Bolt Rifle -->
+  <!-- Sniper Bolt Rifle -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Sniper</defName>
     <label>sniper bolt rifle</label>
@@ -577,6 +613,12 @@
             <drawOffset>(0, 1, -0.2)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+          <li>BEWH_WeaponDecoration</li>
+        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
