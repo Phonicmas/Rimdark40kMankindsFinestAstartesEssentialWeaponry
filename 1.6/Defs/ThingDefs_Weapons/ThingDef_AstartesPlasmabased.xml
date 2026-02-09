@@ -3,7 +3,7 @@
 
   <!-- STANDARD -->
 
-<!-- Plasma Pistol -->
+  <!-- Plasma Pistol -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaPistol</defName>
     <label>plasma pistol</label>
@@ -83,10 +83,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Plasma Incinerator -->
+  <!-- Plasma Incinerator -->
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaIncinerator</defName>
     <label>plasma incinerator</label>
@@ -164,6 +169,11 @@
             <drawOffset>(0, 1, -0.2)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Combat knife -->
+  <!-- Combat knife -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesKnife</defName>
     <label>combat knife</label>
@@ -77,13 +77,18 @@
         </weaponCarryDrawOffsets>
       </li>
       <li Class="Core40k.DefModExtension_CriticalHit">
-        <criticalHitChance>0.3</criticalHitChance>                          <!-- Equals 30% chance -->
+        <criticalHitChance>0.3</criticalHitChance>        <!-- Equals 30% chance -->
         <criticalHitDamageMultiplier>5</criticalHitDamageMultiplier>        <!-- Damage done is multiplied by 5 here so damage done to pawn that was 14 would become 70 (Im not doubting anyone maths skills, just for clarity xd) -->
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Judiciar Power Sword -->
+  <!-- Judiciar Power Sword -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerSword_Judiciar</defName>
     <label>judiciar power sword</label>
@@ -140,7 +145,7 @@
         <colorMaskAmount>3</colorMaskAmount>
         <defaultPrimaryColor>(213,158,76)</defaultPrimaryColor>
         <defaultSecondaryColor>(106,38,45)</defaultSecondaryColor>
-        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor> 
+        <defaultTertiaryColor>(255,255,255)</defaultTertiaryColor>
       </li>
     </comps>
     <equippedAngleOffset>15</equippedAngleOffset>
@@ -164,10 +169,15 @@
       <li Class="Core40k.DefModExtension_BeheadingCut">
         <neckTargetingChance>0.8</neckTargetingChance>        <!-- Equals 80% chance -->
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Chain Axe -->
+  <!-- Chain Axe -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesChainAxe</defName>
     <label>chainaxe</label>
@@ -243,10 +253,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Power Axe -->
+  <!-- Power Axe -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerAxe</defName>
     <label>power axe</label>
@@ -323,10 +338,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Power Maul -->
+  <!-- Power Maul -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerMaul</defName>
     <label>power maul</label>
@@ -409,10 +429,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Thunderhammer -->
+  <!-- Thunderhammer -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesThunderhammer</defName>
     <label>thunderhammer</label>
@@ -496,10 +521,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Power Fist  -->
+  <!-- Power Fist  -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerFist</defName>
     <label>power fist</label>
@@ -565,10 +595,15 @@
           </west>
         </weaponCarryDrawOffsets>
       </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
+      </li>
     </modExtensions>
   </ThingDef>
 
-<!-- Lightning Claws -->
+  <!-- Lightning Claws -->
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesLightningClaws</defName>
     <label>lightning claw</label>
@@ -646,6 +681,11 @@
             <drawOffset>(0, 0, -0.15)</drawOffset>
           </west>
         </weaponCarryDrawOffsets>
+      </li>
+      <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+        <tabDefs>
+          <li>BEWH_WeaponColoring</li>
+        </tabDefs>
       </li>
     </modExtensions>
   </ThingDef>
