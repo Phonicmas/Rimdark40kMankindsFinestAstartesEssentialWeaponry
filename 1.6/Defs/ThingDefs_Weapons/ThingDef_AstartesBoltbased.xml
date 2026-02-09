@@ -64,10 +64,9 @@
         </availableProjectiles>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>        <!-- If this is not set, it will default to use color of the stuff its made out of (if any)-->
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
       <!-- This enables the weapon to have access to decorations -->
@@ -155,10 +154,9 @@
         </availableProjectiles>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
@@ -247,10 +245,9 @@
         </availableProjectiles>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
@@ -338,10 +335,9 @@
         </availableProjectiles>
       </li>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
@@ -423,10 +419,9 @@
     </verbs>
     <comps>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(0.52,0.53,0.53)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
@@ -505,10 +500,9 @@
     </verbs>
     <comps>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
@@ -588,10 +582,9 @@
     </verbs>
     <comps>
       <li Class="Core40k.CompProperties_MultiColor">
-        <colorMaskAmount>3</colorMaskAmount>
+        <colorMaskAmount>2</colorMaskAmount>
         <defaultPrimaryColor>(47, 47, 47)</defaultPrimaryColor>
         <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-        <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
       </li>
       <li Class="Core40k.CompProperties_WeaponDecoration" />
     </comps>
