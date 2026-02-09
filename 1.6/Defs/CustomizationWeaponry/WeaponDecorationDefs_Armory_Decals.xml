@@ -21,7 +21,7 @@
       <li>BEWH_AstartesBoltCarbine</li>
       <li>BEWH_AstartesBoltCarbine_Oculus</li>
       <li>BEWH_AstartesBoltRifle_Stalker</li>
-      <li>BEWH_AstartesBoltPistol_Heavy</li>
+      <!-- <li>BEWH_AstartesBoltPistol_Heavy</li> -->
       <li>BEWH_AstartesBoltRifle_Heavy</li>
       <!-- <li>BEWH_AstartesBoltRifle_Sniper</li> -->
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
@@ -29,7 +29,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(201, 148, 20)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_decals</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -139,7 +139,7 @@
       <li>BEWH_AstartesBoltCarbine</li>
       <li>BEWH_AstartesBoltCarbine_Oculus</li>
       <li>BEWH_AstartesBoltRifle_Stalker</li>
-      <li>BEWH_AstartesBoltPistol_Heavy</li>
+      <!-- <li>BEWH_AstartesBoltPistol_Heavy</li> -->
       <li>BEWH_AstartesBoltRifle_Heavy</li>
       <!-- <li>BEWH_AstartesBoltRifle_Sniper</li> -->
       <!-- <li>BEWH_AstartesPlasmaPistol</li> -->
@@ -147,7 +147,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(201, 148, 20)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_decals</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -247,7 +247,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(201, 148, 20)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_decals</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -365,7 +365,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(201, 148, 20)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_decals</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -465,7 +465,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(201, 148, 20)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_decals</decorationType>
     <weaponSpecificDrawData>
       <li>
