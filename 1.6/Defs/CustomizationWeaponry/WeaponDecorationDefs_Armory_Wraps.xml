@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Wraps -->
+<!-- Wraps -->
   <Core40k.WeaponDecorationTypeDef>
     <defName>BEWH_DecoCategory_wraps</defName>
     <label>Wraps</label>
   </Core40k.WeaponDecorationTypeDef>
 
-  <!-- Handle Wrap -->
+<!-- Handle Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoHandleWrap</defName>
     <label>Handle Wraps</label>
@@ -190,7 +190,7 @@
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-  <!-- Leather Wrap -->
+<!-- Leather Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoLeatherWrap</defName>
     <label>Leather Wraps</label>
@@ -198,6 +198,7 @@
     <iconPath>Things/Decorations/Weaponry/BEWH_wDeco_Wraps</iconPath>
     <drawnTextureIconPath>Things/Decorations/Weaponry/BEWH_wDeco_Wraps</drawnTextureIconPath>
     <drawSize>(0.38, 0.38)</drawSize>
+    <layerPlacement>100</layerPlacement>
     <sortOrder>1.1</sortOrder>
     <appliesTo>
       <!-- <li>BEWH_AstartesBoltPistol</li> -->
@@ -219,16 +220,16 @@
         <key>BEWH_AstartesBoltCarbine</key>
         <value>
           <defaultData>
-            <offset>(0.152953, 0, 0.052684)</offset>
+            <offset>(0.152953, 1, 0.052684)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.152953, 0, 0.052684)</offset>
+            <offset>(0.152953, 1, 0.052684)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.152953, 0, 0.052684)</offset>
+            <offset>(-0.152953, 1, 0.052684)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.152953, 0, 0.052684)</offset>
+            <offset>(-0.152953, 1, 0.052684)</offset>
           </dataNorth>
         </value>
       </li>
@@ -236,16 +237,16 @@
         <key>BEWH_AstartesBoltCarbine_Oculus</key>
         <value>
           <defaultData>
-            <offset>(0.13761, 0, 0.042062)</offset>
+            <offset>(0.13761, 1, 0.042062)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.13761, 0, 0.042062)</offset>
+            <offset>(0.13761, 1, 0.042062)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.13761, 0, 0.042062)</offset>
+            <offset>(-0.13761, 1, 0.042062)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.13761, 0, 0.042062)</offset>
+            <offset>(-0.13761, 1, 0.042062)</offset>
           </dataNorth>
         </value>
       </li>
@@ -253,16 +254,16 @@
         <key>BEWH_AstartesBoltRifle_Stalker</key>
         <value>
           <defaultData>
-            <offset>(0.149413, 0, 0.029079)</offset>
+            <offset>(0.149413, 1, 0.029079)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.149413, 0, 0.029079)</offset>
+            <offset>(0.149413, 1, 0.029079)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.149413, 0, 0.029079)</offset>
+            <offset>(-0.149413, 1, 0.029079)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.149413, 0, 0.029079)</offset>
+            <offset>(-0.149413, 1, 0.029079)</offset>
           </dataNorth>
         </value>
       </li>
@@ -271,16 +272,16 @@
         <value>
           <scale>0.8604</scale>
           <defaultData>
-            <offset>(0.155314, 0, 0.066847)</offset>
+            <offset>(0.155314, 1, 0.066847)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.155314, 0, 0.066847)</offset>
+            <offset>(0.155314, 1, 0.066847)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.155314, 0, 0.066847)</offset>
+            <offset>(-0.155314, 1, 0.066847)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.155314, 0, 0.066847)</offset>
+            <offset>(-0.155314, 1, 0.066847)</offset>
           </dataNorth>
         </value>
       </li>
@@ -289,16 +290,16 @@
         <value>
           <scale>1.15</scale>
           <defaultData>
-            <offset>(0.370119, 0, 0.008)</offset>
+            <offset>(0.370119, 1, 0.008)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.370119, 0, 0.008)</offset>
+            <offset>(0.370119, 1, 0.008)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.370119, 0, 0.008)</offset>
+            <offset>(-0.370119, 1, 0.008)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.370119, 0, 0.008)</offset>
+            <offset>(-0.370119, 1, 0.008)</offset>
           </dataNorth>
         </value>
       </li>
@@ -307,23 +308,23 @@
         <value>
           <scale>0.83</scale>
           <defaultData>
-            <offset>(0.016207, 0, -0.034955)</offset>
+            <offset>(0.016207, 1, -0.034955)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.016207, 0, -0.034955)</offset>
+            <offset>(0.016207, 1, -0.034955)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.016207, 0, -0.034955)</offset>
+            <offset>(-0.016207, 1, -0.034955)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.016207, 0, -0.034955)</offset>
+            <offset>(-0.016207, 1, -0.034955)</offset>
           </dataNorth>
         </value>
       </li>
     </weaponSpecificDrawData>
   </Core40k.WeaponDecorationDef>
 
-  <!-- Chain Wrap -->
+<!-- Chain Wrap -->
   <Core40k.WeaponDecorationDef>
     <defName>BEWH_DecoChainWrap</defName>
     <label>Chain Wraps</label>
@@ -352,16 +353,16 @@
         <key>BEWH_AstartesBoltPistol</key>
         <value>
           <defaultData>
-            <offset>(-0.009934, 0, 0.012789)</offset>
+            <offset>(-0.009934, 1, 0.012789)</offset>
           </defaultData>
           <dataEast>
-            <offset>(-0.009934, 0, 0.012789)</offset>
+            <offset>(-0.009934, 1, 0.012789)</offset>
           </dataEast>
           <dataWest>
-            <offset>(0.009934, 0, 0.012789)</offset>
+            <offset>(0.009934, 1, 0.012789)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(0.009934, 0, 0.012789)</offset>
+            <offset>(0.009934, 1, 0.012789)</offset>
           </dataNorth>
         </value>
       </li>
@@ -370,16 +371,16 @@
         <value>
           <scale>0.98</scale>
           <defaultData>
-            <offset>(0.170955, 0, 0.045394)</offset>
+            <offset>(0.170955, 1, 0.045394)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.170955, 0, 0.045394)</offset>
+            <offset>(0.170955, 1, 0.045394)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.170955, 0, 0.045394)</offset>
+            <offset>(-0.170955, 1, 0.045394)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.170955, 0, 0.045394)</offset>
+            <offset>(-0.170955, 1, 0.045394)</offset>
           </dataNorth>
         </value>
       </li>
@@ -388,16 +389,16 @@
         <value>
           <scale>0.98</scale>
           <defaultData>
-            <offset>(0.144045, 0, 0.039312)</offset>
+            <offset>(0.144045, 1, 0.039312)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.144045, 0, 0.039312)</offset>
+            <offset>(0.144045, 1, 0.039312)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.144045, 0, 0.039312)</offset>
+            <offset>(-0.144045, 1, 0.039312)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.144045, 0, 0.039312)</offset>
+            <offset>(-0.144045, 1, 0.039312)</offset>
           </dataNorth>
         </value>
       </li>
@@ -405,16 +406,16 @@
         <key>BEWH_AstartesBoltRifle_Stalker</key>
         <value>
           <defaultData>
-            <offset>(0.149413, 0, 0.029079)</offset>
+            <offset>(0.149413, 1, 0.029079)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.149413, 0, 0.029079)</offset>
+            <offset>(0.149413, 1, 0.029079)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.149413, 0, 0.029079)</offset>
+            <offset>(-0.149413, 1, 0.029079)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.149413, 0, 0.029079)</offset>
+            <offset>(-0.149413, 1, 0.029079)</offset>
           </dataNorth>
         </value>
       </li>
@@ -423,16 +424,16 @@
         <value>
           <scale>0.83</scale>
           <defaultData>
-            <offset>(0.16765, 0, 0.064557)</offset>
+            <offset>(0.16765, 1, 0.064557)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.16765, 0, 0.060557)</offset>
+            <offset>(0.16765, 1, 0.060557)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.16765, 0, 0.064557)</offset>
+            <offset>(-0.16765, 1, 0.064557)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.16765, 0, 0.064557)</offset>
+            <offset>(-0.16765, 1, 0.064557)</offset>
           </dataNorth>
         </value>
       </li>
@@ -440,16 +441,16 @@
         <key>BEWH_AstartesBoltRifle_Heavy</key>
         <value>
           <defaultData>
-            <offset>(0.360424, 0, 0.014314)</offset>
+            <offset>(0.360424, 1, 0.014314)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.360424, 0, 0.014314)</offset>
+            <offset>(0.360424, 1, 0.014314)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.360424, 0, 0.014314)</offset>
+            <offset>(-0.360424, 1, 0.014314)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.360424, 0, 0.014314)</offset>
+            <offset>(-0.360424, 1, 0.014314)</offset>
           </dataNorth>
         </value>
       </li>
@@ -458,16 +459,16 @@
         <value>
           <scale>1</scale>
           <defaultData>
-            <offset>(0.051593, 0, 0.002528)</offset>
+            <offset>(0.051593, 1, 0.002528)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.051593, 0, 0.002528)</offset>
+            <offset>(0.051593, 1, 0.002528)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.051593, 0, 0.002528)</offset>
+            <offset>(-0.051593, 1, 0.002528)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.051593, 0, 0.002528)</offset>
+            <offset>(-0.051593, 1, 0.002528)</offset>
           </dataNorth>
         </value>
       </li>
@@ -476,16 +477,16 @@
         <value>
           <scale>0.83</scale>
           <defaultData>
-            <offset>(0.083066, 0, 0.024166)</offset>
+            <offset>(0.083066, 1, 0.024166)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.083066, 0, 0.024166)</offset>
+            <offset>(0.083066, 1, 0.024166)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.083066, 0, 0.024166)</offset>
+            <offset>(-0.083066, 1, 0.024166)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.083066, 0, 0.024166)</offset>
+            <offset>(-0.083066, 1, 0.024166)</offset>
           </dataNorth>
         </value>
       </li>
@@ -494,16 +495,16 @@
         <value>
           <scale>0.97</scale>
           <defaultData>
-            <offset>(0.280757, 0, 0.006462)</offset>
+            <offset>(0.280757, 1, 0.006462)</offset>
           </defaultData>
           <dataEast>
-            <offset>(0.280757, 0, 0.006462)</offset>
+            <offset>(0.280757, 1, 0.006462)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.280757, 0, 0.006462)</offset>
+            <offset>(-0.280757, 1, 0.006462)</offset>
           </dataWest>
           <dataNorth>
-            <offset>(-0.280757, 0, 0.006462)</offset>
+            <offset>(-0.280757, 1, 0.006462)</offset>
           </dataNorth>
         </value>
       </li>
