@@ -26,7 +26,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(178, 178, 178)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -136,7 +136,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(178, 178, 178)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -246,7 +246,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(178, 178, 178)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
@@ -356,7 +356,7 @@
     </appliesTo>
       <shaderType>Cutout</shaderType>
     <colourable>true</colourable>
-    <defaultColour>(178, 178, 178)</defaultColour>
+    <defaultColour>(240,176,29)</defaultColour>
     <decorationType>BEWH_DecoCategory_trinkets</decorationType>
     <weaponSpecificDrawData>
       <li>
