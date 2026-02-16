@@ -7,7 +7,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaPistol</defName>
     <label>plasma pistol</label>
-    <description>A highly sophisticated, yet compact, sidearm that fires bolts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvalible Fire modes: Standard, Overcharged</description>
+    <description>A highly sophisticated, yet compact, sidearm that fires bolts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvailable Fire modes: Standard, Overcharged</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Plasmabased/BEWH_PlasmaPistol</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -96,7 +96,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesPlasmaIncinerator</defName>
     <label>plasma incinerator</label>
-    <description>A massive, advanced weapon capable of firing bursts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvalible Fire modes: Standard, Overcharged</description>
+    <description>A massive, advanced weapon capable of firing bursts of superheated matter. In standard firing mode, the projectiles are stabilized for accuracy and the safety of the user. In overcharged mode, the safety protocols are disengaged, and the weapon delivers searing bolts of highly unstable plasma that explode violently on impact.\n\nAvailable Fire modes: Standard, Overcharged</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Plasmabased/BEWH_PlasmaIncinerator</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>

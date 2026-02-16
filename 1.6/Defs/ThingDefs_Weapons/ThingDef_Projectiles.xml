@@ -42,7 +42,7 @@
     <ThingDef ParentName="BaseBullet">
         <defName>BEWH_BolterRoundTempest</defName>
         <label>Tempest Bolt</label>
-        <description>Specialized round housing miniature plasma-shock generator that emits a focused EMP burst, disrupting targets' energy shields and electronic systems. Particularly effective against machines and mechanical foes.</description>
+        <description>Specialized round housing a miniature plasma-shock generator that emits a focused EMP burst, disrupting targets' energy shields and electronic systems. Particularly effective against machines and mechanical foes.</description>
         <thingClass>Projectile_Explosive</thingClass>
         <uiIconPath>Things/Ammo/Bolter/Tempest_Small</uiIconPath>
         <graphicData>
