@@ -7,7 +7,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltPistol</defName>
     <label>bolt pistol</label>
-    <description>The standard short-range sidearm of the Adeptus Astartes, firing mass-reactive rounds. Compact, reliable and versatile, it is most effective in close-quarters combat, while retaining the lethality of a full-sized bolter.\n\nAvalible Loadout: Standard, Inferno</description>
+    <description>The standard short-range sidearm of the Adeptus Astartes, firing mass-reactive rounds. Compact, reliable and versatile, it is most effective in close-quarters combat, while retaining the lethality of a full-sized bolter.\n\nAvailable Loadout: Standard, Inferno</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltPistol</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -102,7 +102,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine</defName>
     <label>bolt carbine</label>
-    <description>A versatile, rapid-fire weapon built on the Mk. II Cawl-pattern chassis, primarily used for special operations. Compact yet powerful, it can chamber a wide variety of specialized ammunition, allowing its user to adapt to any battlefield scenario.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <description>A versatile, rapid-fire weapon built on the Mk. II Cawl-pattern chassis, primarily used for special operations. Compact yet powerful, it can chamber a wide variety of specialized ammunition, allowing its user to adapt to any battlefield scenario.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbine_Base</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -192,7 +192,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltCarbine_Oculus</defName>
     <label>oculus bolt carbine</label>
-    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvalible Loadout: Standard, Inferno, Metal Storm, Tempest</description>
+    <description>A precision variant of the Bolt Carbine, trading the rate of fire for superior range and accuracy due to its advanced optics. It retains the versatility and compatibility with a wide variety of ammunition.\n\nAvailable Loadout: Standard, Inferno, Metal Storm, Tempest</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltCarbine_Oculus</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -283,7 +283,7 @@
   <ThingDef ParentName="BEWH_AstartesRangedBase">
     <defName>BEWH_AstartesBoltRifle_Stalker</defName>
     <label>stalker bolt rifle</label>
-    <description>The Stalker Bolt Rifle, also known as the Stalker Bolter, is a long-range precision battle rifle of the Adeptus Astartes that uses Mk. II Cawl-pattern chassis. It is capable of chambering the Kraken bolts, giving it exceptional performance against heavily armored targets.\n\nAvalible Loadout: Standard, Kraken</description>
+    <description>The Stalker Bolt Rifle, also known as the Stalker Bolter, is a long-range precision battle rifle of the Adeptus Astartes that uses the Mk. II Cawl-pattern chassis. It is capable of chambering the Kraken bolts, giving it exceptional performance against heavily armored targets.\n\nAvailable Loadout: Standard, Kraken</description>
     <graphicData>
       <texPath>Things/Weapons/Ranged/Boltbased/BEWH_BoltRifle_Stalker</texPath>
       <shaderType>BEWH_CutoutThreeColor</shaderType>

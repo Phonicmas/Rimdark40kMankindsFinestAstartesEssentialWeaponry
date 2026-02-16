@@ -5,7 +5,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesKnife</defName>
     <label>combat knife</label>
-    <description>A standard issue Astartes combat knife, that is given to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - 30% chance to deal 4x the damage to the enemy.</description>
+    <description>A standard-issue Astartes combat knife that is given to every Space Marine as soon as they recover from gene-seed implantation. Roughly the size of a normal human short sword, the knife has a monomolecular edge that never dulls.\n\nPassive: Terminal Precision - Small chance to deal critical damage to the enemy with each strike.</description>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -92,7 +92,7 @@
   <ThingDef ParentName="BEWH_AstartesMeleeBase">
     <defName>BEWH_AstartesPowerSword_Judiciar</defName>
     <label>judiciar power sword</label>
-    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.\n\nPassive: Final Judgment - Weilder has a high chance to deal a finishing blow, decapitating the humanlike enemy.</description>
+    <description>A heavy, two-handed power sword, a Judiciar's primary instrument of execution. Although slower to wield than standard power swords, it deals greater damage. Its weight, balance, and blade geometry are optimized for powerful, precise strikes, allowing a Judiciar to decapitate his foes with ease.\n\nPassive: Final Judgment - Wielder has a chance to deal a finishing blow, decapitating the humanlike enemy.</description>
     <soundInteract>BEWH_SFX_PowerswordInteract</soundInteract>
     <meleeHitSound>BEWH_SFX_PowerswordHit</meleeHitSound>
     <recipeMaker>
@@ -135,7 +135,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>30</power>
+        <power>28</power>
         <cooldownTime>2.5</cooldownTime>
         <armorPenetration>1.2</armorPenetration>
       </li>
@@ -167,7 +167,7 @@
         </weaponCarryDrawOffsets>
       </li>
       <li Class="Core40k.DefModExtension_BeheadingCut">
-        <neckTargetingChance>0.8</neckTargetingChance>        <!-- Equals 80% chance -->
+        <neckTargetingChance>0.5</neckTargetingChance>        <!-- Equals 50% chance -->
       </li>
       <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
         <tabDefs>
