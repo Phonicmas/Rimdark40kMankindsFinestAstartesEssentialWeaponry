@@ -1,0 +1,15 @@
+{
+  "TextureModID": "phonicmas.rimdark.mankindsfinest.armory",
+  "ItemDefName": "BEWH_AstartesPowerMaul",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.01724138,
+  "OffY": -0.01724138,
+  "Rotation": 50.0,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "HandsMode": 2,
+  "BladeStart": 0.12931034,
+  "BladeEnd": 0.474137932,
+  "MeleeWeaponType": 8
+}

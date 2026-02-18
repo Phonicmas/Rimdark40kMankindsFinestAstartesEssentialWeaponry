@@ -1,0 +1,14 @@
+{
+  "TextureModID": "phonicmas.rimdark.mankindsfinest.armory",
+  "ItemDefName": "BEWH_AstartesPowerAxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.01724138,
+  "OffY": -0.01724138,
+  "Rotation": 50.0,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "HandsMode": 2,
+  "BladeEnd": 0.396551728,
+  "MeleeWeaponType": 24
+}
