@@ -1,0 +1,14 @@
+{
+  "TextureModID": "phonicmas.rimdark.mankindsfinest.armory",
+  "ItemDefName": "BEWH_AstartesThunderhammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.01724138,
+  "Rotation": 50.0,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "HandsMode": 2,
+  "BladeStart": 0.181034476,
+  "BladeEnd": 0.448275864,
+  "MeleeWeaponType": 9
+}

@@ -1,0 +1,13 @@
+{
+  "TextureModID": "phonicmas.rimdark.mankindsfinest.armory",
+  "ItemDefName": "BEWH_AstartesKnife",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.00862069,
+  "OffY": -0.293103456,
+  "Rotation": 90.0,
+  "HandsMode": 2,
+  "BladeStart": -0.137931034,
+  "BladeEnd": 0.5086207,
+  "MeleeWeaponType": 3
+}
